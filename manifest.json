@@ -1,0 +1,43 @@
+{
+
+  "manifest_version": 2,
+  "name": "Bubbles - Theme",
+  "short_name": "Bubbles",
+  "version": "1.0",
+  "author": "fzilla",
+
+  "description": "Bubbles - Theme. It is a Dynamic Theme that adds bubbles on the header bar on Certain events. Configuration can be done through the options page.",
+
+  "developer": {
+    "name": "Samar Yalini",
+    "url": "https://github.com/yaliniyalu"
+  },
+
+  "icons": {
+    "48": "/assets/icons/icon.png",
+    "96": "/assets/icons/icon@2x.png",
+    "144": "/assets/icons/icon@3x.png",
+    "192": "/assets/icons/icon@4x.png"
+  },
+
+  "background": {
+    "scripts": ["/assets/js/sketch.min.js", "background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content-script.js"]
+    }
+  ],
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": [
+    "theme",
+    "<all_urls>",
+    "storage"
+  ]
+}

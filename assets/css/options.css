@@ -1,0 +1,45 @@
+
+label {
+    margin-right: 15px;
+}
+
+tr.head {
+    font-weight: bold;
+    font-size: large;
+}
+
+td.opt_name {
+    width: 10%;
+}
+
+td.opt_action {
+    width: 20%;
+}
+
+td.opt_count {
+    width: 10%
+}
+
+td.opt_preview {
+    width: 10%;
+}
+
+td.opt_span {
+    text-align: center;
+}
+
+.opt_span_to {
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+.opt_span_and {
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.reset {
+    margin: 5px 0;
+    text-decoration: none;
+}
